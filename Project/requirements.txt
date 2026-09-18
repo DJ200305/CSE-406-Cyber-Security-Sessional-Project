@@ -1,0 +1,5 @@
+flask>=3.0,<4
+numpy>=1.26,<3
+scikit-learn>=1.4,<2
+requests>=2.31,<3
+pytest>=8,<9

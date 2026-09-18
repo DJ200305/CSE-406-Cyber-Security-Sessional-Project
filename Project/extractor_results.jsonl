@@ -1,0 +1,39 @@
+{"queries": 10, "decimals": null, "mean_absolute_probability_error": 2.3042787352781236e-16, "parameter_error": 1.1399770280496608e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 20, "decimals": null, "mean_absolute_probability_error": 2.5088319686701955e-16, "parameter_error": 6.081660986551774e-15, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 30, "decimals": null, "mean_absolute_probability_error": 6.618680015633476e-16, "parameter_error": 2.7023709380119294e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 40, "decimals": null, "mean_absolute_probability_error": 2.106095295528522e-16, "parameter_error": 2.455194792220067e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "decimals": null, "mean_absolute_probability_error": 3.7407318161519364e-16, "parameter_error": 1.4103001000381394e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 12, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 2.893054972097653e-16, "parameter_error": 2.006225964763755e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 1.1116086915559315e-15, "parameter_error": 22.359912581192887, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 60, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 6.224498105035249e-16, "parameter_error": 22.35991258119288, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 10, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 1.3109759035272144e-16, "parameter_error": 24.12146290731699, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 12, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 4.713123899653028e-16, "parameter_error": 24.12146290731699, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 100, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 7.931216685223465e-16, "parameter_error": 22.359912581192887, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 500, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 3.1830728485063958e-15, "parameter_error": 22.359912581192887, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 1000, "decimals": null, "dynamic_queries": true, "mean_absolute_probability_error": 7.203211565013086e-15, "parameter_error": 22.359912581192912, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "decimals": null, "dynamic_queries": false, "mean_absolute_probability_error": 3.7407318161519364e-16, "parameter_error": 1.4103001000381394e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 100, "decimals": null, "dynamic_queries": false, "mean_absolute_probability_error": 3.157279535218621e-16, "parameter_error": 7.92505449413983e-15, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 500, "decimals": null, "dynamic_queries": false, "mean_absolute_probability_error": 8.758767144431057e-16, "parameter_error": 1.081858038910771e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 1000, "decimals": null, "dynamic_queries": false, "mean_absolute_probability_error": 5.492329746266607e-16, "parameter_error": 1.5385834169324402e-14, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 12, "dynamic_queries": false, "mean_absolute_probability_error": 0.0415623796207753, "parameter_error": 10.212593174728338, "victim_accuracy": 1.0, "attacker_accuracy": 0.9166666666666666}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.06497906650790584, "parameter_error": 11.555177602673353, "victim_accuracy": 1.0, "attacker_accuracy": 0.86}
+{"queries": 100, "dynamic_queries": false, "mean_absolute_probability_error": 0.0748594297785888, "parameter_error": 12.255669643919672, "victim_accuracy": 1.0, "attacker_accuracy": 0.9}
+{"queries": 500, "dynamic_queries": false, "mean_absolute_probability_error": 0.06830389664483462, "parameter_error": 13.96414222751391, "victim_accuracy": 1.0, "attacker_accuracy": 0.936}
+{"queries": 1000, "dynamic_queries": false, "mean_absolute_probability_error": 0.06659290346017505, "parameter_error": 13.557966436320662, "victim_accuracy": 1.0, "attacker_accuracy": 0.925}
+
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.06497906650790584, "parameter_error": 11.555177602673353, "victim_accuracy": 1.0, "attacker_accuracy": 0.86}
+{"queries": 100, "dynamic_queries": false, "mean_absolute_probability_error": 0.0748594297785888, "parameter_error": 12.255669643919672, "victim_accuracy": 1.0, "attacker_accuracy": 0.9}
+{"queries": 500, "dynamic_queries": false, "mean_absolute_probability_error": 0.06830389664483462, "parameter_error": 13.96414222751391, "victim_accuracy": 1.0, "attacker_accuracy": 0.936}
+{"queries": 1000, "dynamic_queries": false, "mean_absolute_probability_error": 0.06659290346017505, "parameter_error": 13.557966436320662, "victim_accuracy": 1.0, "attacker_accuracy": 0.925}
+
+{"queries": 12, "dynamic_queries": false, "mean_absolute_probability_error": 0.00032002936629122044, "parameter_error": 0.04149341584409561, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.0005001320431022138, "parameter_error": 0.04749667326357757, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.0005001320431022138, "parameter_error": 0.04749667326357757, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.0005001320431022138, "parameter_error": 0.04749667326357757, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.0005001320431022138, "parameter_error": 0.04749667326357757, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.0005930912099558484, "parameter_error": 0.04749667326357757, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.0005930912099558484, "parameter_error": 0.04749667326357757, "victim_accuracy": 1.0, "attacker_accuracy": 1.0}
+{"queries": 50, "dynamic_queries": false, "mean_absolute_probability_error": 0.25456185530609077, "parameter_error": 365.67481713906517, "victim_accuracy": 1.0, "attacker_accuracy": 0.64}
+{"queries": 100, "dynamic_queries": false, "mean_absolute_probability_error": 0.17645099456446503, "parameter_error": 541.9501436556444, "victim_accuracy": 1.0, "attacker_accuracy": 0.81}
+{"queries": 500, "dynamic_queries": false, "mean_absolute_probability_error": 0.21118697700215475, "parameter_error": 525.2088121409304, "victim_accuracy": 1.0, "attacker_accuracy": 0.722}
+{"queries": 1000, "dynamic_queries": false, "mean_absolute_probability_error": 0.203116212050401, "parameter_error": 511.3622399723754, "victim_accuracy": 1.0, "attacker_accuracy": 0.736}
