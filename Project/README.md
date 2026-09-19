@@ -76,8 +76,8 @@ attacker                        victim API               victim model
    │<─────────────────────────────────┤
    │
 ```
-   │  log(p_i / p_r) = (w_i−w_r)·x + (b_i−b_r)   ← one linear equation per query
-   │  stack ≥ 5 queries → lstsq → ŵ, b̂          ← stolen model
+   │  $$log(p_i / p_r) = (w_i−w_r)·x + (b_i−b_r)$$   ← one linear equation per query
+   │  $$stack ≥ 5 queries → lstsq → ŵ, b̂$$          ← stolen model
 
 
 ## Project Layout
