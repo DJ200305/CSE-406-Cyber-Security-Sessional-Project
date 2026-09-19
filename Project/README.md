@@ -47,7 +47,7 @@ learns comes from JSON responses to `POST /predict`.
 A multinomial logistic model assigns
 
 ```
-p_i(x) = exp(w_i · x + b_i) / Σ_k exp(w_k · x + b_k)
+$$p_i(x) = \frac{\exp(w_i \cdot x + b_i)}{\sum_k \exp(w_k \cdot x + b_k)}$$
 ```
 
 The softmax is invariant to adding a constant to every logit, so the parameters
@@ -56,7 +56,7 @@ the reference and taking a log-ratio cancels the normalizing denominator and
 turns the nonlinear model into a **linear equation in the unknowns**:
 
 ```
-log( p_i(x) / p_r(x) )  =  (w_i − w_r) · x  +  (b_i − b_r)
+$$\log\left(\frac{p_i(x)}{p_r(x)}\right) = (w_i - w_r) \cdot x + (b_i - b_r)$$
 ```
 
 Every query `x` yields one such equation per class `i ≠ r`. With `d + 1`
