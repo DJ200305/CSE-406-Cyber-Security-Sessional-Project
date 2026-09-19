@@ -59,8 +59,8 @@ $$
 \log\left(\frac{p_i(x)}{p_r(x)}\right) = (w_i - w_r) \cdot x + (b_i - b_r)
 $$
 
-Every query `x` yields one such equation per class `i ≠ r`. With `d + 1`
-linearly independent queries (here `4 + 1 = 5`), the system is exactly
+Every query $$x$$ yields one such equation per class $$i ≠ r$$. With $$d + 1$$
+linearly independent queries (here $$4 + 1 = 5$$), the system is exactly
 determined; the extractor solves it by **least squares**
 (`numpy.linalg.lstsq`) so extra queries simply add robustness.
 
