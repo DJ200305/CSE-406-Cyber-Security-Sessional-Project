@@ -64,7 +64,7 @@ linearly independent queries (here `4 + 1 = 5`), the system is exactly
 determined; the extractor solves it by **least squares**
 (`numpy.linalg.lstsq`) so extra queries simply add robustness.
 
-The recovered `(w_i − w_r, b_i − b_r)` differences reproduce the victim's
+The recovered $$(w_i − w_r, b_i − b_r)$$ differences reproduce the victim's
 probability outputs *exactly* — the un-recoverable shift is unobservable by
 construction.
 
