@@ -68,16 +68,17 @@ The recovered $$(w_i − w_r, b_i − b_r)$$ differences reproduce the victim's
 probability outputs *exactly* — the un-recoverable shift is unobservable by
 construction.
 
-```
-attacker                         victim API                 victim model
-   │   POST /predict {features}       │                           │
+```text
+attacker                        victim API               victim model
+   │    POST /predict {features}      │                           │
    ├─────────────────────────────────>│──── predict_proba ───────>│
-   │   {"label":1,"probs":[...]}      │<──────────────────────────┤
+   │    {"label":1,"probs":[...]}     │<──────────────────────────┤
    │<─────────────────────────────────┤
    │
+```
    │  log(p_i / p_r) = (w_i−w_r)·x + (b_i−b_r)   ← one linear equation per query
    │  stack ≥ 5 queries → lstsq → ŵ, b̂          ← stolen model
-```
+
 
 ## Project Layout
 
