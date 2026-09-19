@@ -168,8 +168,6 @@ matrix.
 py label_only.py --points 12 --class-a 1 --class-b 2
 ```
 
-> ⚠️ This script defaults to a `/label` endpoint that `api.py` does not
-> currently serve — see [Known Issues](#known-issues).
 
 ## Metrics
 
@@ -220,33 +218,6 @@ zero.
 py -m pytest -q
 ```
 
-## Known Issues
-
-Real defects in the current code, listed so results are not misinterpreted:
-
-1. **`experiment.py` does not run as-is.** It calls
-   `collect_queries(url, queries, victim.feature_count, decimals)` with four
-   arguments, but `collect_queries()` in `extractor.py` accepts three. The
-   rounding sweep needs that extra `decimals` parameter threaded through (or
-   the rounding applied server-side via `py api.py --decimals d`).
-2. **`label_only.py` points at a missing endpoint.** It defaults to `/label`,
-   which `api.py` does not define. Pass
-   `--url http://127.0.0.1:5000/predict` — the response already contains
-   `label` — or add the endpoint.
-3. **`extractor_results.json`** (singular) is an empty leftover; the live log is
-   `extractor_results.jsonl`.
-4. `LogisticRegression(multi_class="multinomial")` is deprecated in
-   scikit-learn ≥ 1.5 and removed in 1.7. Multinomial is already the default
-   for the `lbfgs` solver, so the argument can simply be dropped.
-
-## References
-
-- F. Tramèr, F. Zhang, A. Juels, M. K. Reiter, T. Ristenpart.
-  *Stealing Machine Learning Models via Prediction APIs.* USENIX Security, 2016.
-- N. Papernot et al. *Practical Black-Box Attacks against Machine Learning.*
-  ASIA CCS, 2017.
-
----
 
 *Coursework and defensive research. The victim here is a local toy model — do
 not point these scripts at systems you do not own or have permission to test.*
