@@ -23,7 +23,6 @@ learns comes from JSON responses to `POST /predict`.
   - [1. Start the victim API](#1-start-the-victim-api)
   - [2. Run the extraction attack](#2-run-the-extraction-attack)
   - [3. Evaluate the rounding defense](#3-evaluate-the-rounding-defense)
-  - [4. Label-only attack](#4-label-only-attack)
 - [Metrics](#metrics)
 - [Results](#results)
 - [Tests](#tests)
@@ -87,7 +86,6 @@ attacker                        victim API               victim model
 | `api.py` | Flask black-box server. `POST /predict`, `GET /health`, `--decimals` defense flag. |
 | `extractor.py` | The attack: query generation, log-ratio linearization, least-squares solve, and evaluation against ground truth. |
 | `experiment.py` | Sweeps the rounding defense (`None, 5, 4, 3, 2` decimals) and reports error at each precision. |
-| `label_only.py` | Harder setting: binary-search boundary probing using **labels only**, then an SVD fit of the separating hyperplane. |
 | `test_extractor.py` | Pytest check that the solver recovers a synthetic softmax to `1e-10`. |
 | `extractor_results.jsonl` | Append-only log of every extraction run (one JSON object per line). |
 
@@ -156,17 +154,6 @@ undefined, and the system becomes unsolvable. The code handles this honestly:
 when even that fails the run is recorded with `null` errors rather than
 silently claiming exact recovery.
 
-### 4. Label-only attack
-
-The strictly weaker oracle — no probabilities, just the argmax label. The
-attacker finds pairs of points on opposite sides of a decision boundary, runs
-30 rounds of bisection to land on the boundary, and fits the separating
-hyperplane by taking the smallest right-singular vector of the augmented point
-matrix.
-
-```powershell
-py label_only.py --points 12 --class-a 1 --class-b 2
-```
 
 
 ## Metrics
